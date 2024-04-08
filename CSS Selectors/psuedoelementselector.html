@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Psuedo Element Selector</title>
+
+	<style type="text/css">
+		h1{background-color: yellow;padding: 50px;border: 5px solid red;}
+		h1:hover{background-color: red;color: yellow;border-color: green;}
+		p.lorem::first-line{color: red;}
+	</style>
+
+</head>
+<body>
+
+	<section class="groupselector">
+		<h1>Welcome to Besant Technologies</h1>
+			<p class="myfirstclass">Learn HTML Course</p>
+			<div id="happy">We are happy to be a part of learning this course</div>
+			<p class="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</section>
+
+</body>
+</html>
