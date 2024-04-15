@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Text Transform</title>
+
+	<style type="text/css">
+		.texttransform p{text-transform: capitalize;background: yellow;opacity: 0.6;}
+		.visibility p::first-line{background: green;color: white;visibility: hidden;}
+
+		.bg-sec{background-image: url(images/1.jpg);background-repeat: no-repeat;background-position: top;background-size: cover;height: 500px;padding: 50px 50px;width: 1400px;}
+		.bg-sec div{color: wheat;}
+
+		@media (min-width: 100px) and (max-width: 767px){
+			.bg-sec{width: 400px;}
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<section>
+		<div class="texttransform">
+			<h1>Text Transform</h1>
+			<p>Lorem IPSUM DOLOR sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+
+		<div class="visibility">
+			<p>Besant Technologies</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+
+	</section>
+
+
+	<section class="bg-sec">
+		<div>
+			<h1>Background Image</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</section>
+
+</body>
+</html>
