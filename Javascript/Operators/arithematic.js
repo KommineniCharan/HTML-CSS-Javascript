@@ -5,9 +5,15 @@ var d = "Sachin";
 var e = true;
 
 //Addition
+console.log("Sum of a + b is : " + (a + b));
+
+//Addition using backtik called as template literal
 console.log(`Sum of a + b is : ${a + b}`);
 
 //Multiplication
+console.log("Multiplication of a * b is : " + a * b);
+
+//Multiplication using backtik called as template literal
 console.log(`Multiplication of a * b is : ${a * b}`);
 
 //Division
