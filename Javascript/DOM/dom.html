@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Modelling</title>
+</head>
+<body>
+    <div id="abc"></div>
+
+    <div class="def"></div>
+    <h1></h1>
+
+    <div class="queryy"></div>
+
+    <p class="qs"></p>
+    <p class="qs"></p>
+    <p class="qs"></p>
+    <p class="qs"></p>
+    <p class="qs"></p>
+
+
+
+    <script>
+        var emp={id:101,name:"Sourabh",sal:45000}
+        document.writeln(JSON.stringify(emp));
+
+        //Id Selector
+        document.getElementById("abc").innerHTML="Good Morning";
+        document.getElementById("abc").style.backgroundColor="red";
+
+        //Class Selector
+        let classs = document.getElementsByClassName("def");
+        if(classs.length>0){
+            classs[0].innerHTML="This is my Class Selector";
+            classs[0].style.backgroundColor="yellow";
+            classs[0].style.color="green";
+        }
+
+        //Tag Selector
+        let tagss = document.getElementsByTagName('h1');
+        if(tagss.length>0){
+            tagss[0].innerHTML="This is my Tag Selector";
+            tagss[0].style.backgroundColor="pink";
+        }
+
+        //Query Selector
+        let query = document.querySelector('.queryy');
+        if(query){
+            query.innerHTML = "This is my Query Selector";
+            query.style.backgroundColor="magenta";
+        }
+
+        //QuerySelectorAll
+        let qsa = document.querySelectorAll('.qs');
+        qsa.forEach((element)=>{
+            element.innerHTML = "This is my Query Selector All";
+        })
+
+    </script>
+
+</body>
+</html>

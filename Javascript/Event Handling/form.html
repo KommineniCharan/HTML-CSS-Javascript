@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling - Form</title>
+</head>
+<body>
+
+    <form action="#" method="POST" onsubmit="return onsb()">
+    
+        <label for="name">Name :</label><br/>
+        <input type="text" placeholder="Enter Name" name="name" id="name" /><br/>
+        <span id="ename"></span><br/>
+
+        <label for="email">Email :</label><br/>
+        <input type="email" placeholder="Enter Email" name="email" id="email" /><br/>
+        <span id="eemail"></span><br/>
+
+        <label for="password">Password :</label><br/>
+        <input type="password" placeholder="Enter Password" name="password" id="password" /><br/>
+        <span id="epswd"></span><br/>
+
+        <input type="submit" value="Submit Form" />
+
+    </form>  
+
+
+    <script>
+
+        function onsb(){
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let password = document.getElementById('password').value;
+
+            if(name == ""){
+                document.getElementById('ename').innerHTML="Please Enter Name"
+                document.getElementById('ename').style.color="red";
+            }
+
+            if(email == ""){
+                document.getElementById('eemail').innerHTML="Please Enter Email"
+                document.getElementById('eemail').style.color="red";
+            }
+
+            if(password == ""){
+                document.getElementById('epswd').innerHTML="Please Enter Password"
+                document.getElementById('epswd').style.color="red";
+            }
+
+            if(password.length <=4){
+                document.getElementById('epswd').innerHTML="Please Enter Matching Password"
+                document.getElementById('epswd').style.color="red";
+            }
+
+        return false;
+
+        }
+
+
+    </script>
+
+    
+</body>
+</html>

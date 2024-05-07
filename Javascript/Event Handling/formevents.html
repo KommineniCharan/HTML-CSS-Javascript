@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling - Form Events</title>
+</head>
+<body>
+  
+    <label>OnFocus Event</label><br/>
+    <input type="text" onfocus="onf()" id="onf" /><br/><br/>
+
+    <label>OnBlur Event</label><br/>
+    <input type="text" onblur="onb()" id="onb" /><br/><br/>
+
+    <label>OnChange Event</label><br/>
+    <input type="text" onchange="onc()" id="onc" /><br/><br/>
+
+    <label>OnInput Event</label><br/>
+    <input type="text" oninput="oni()" id="oni" /><br/><br/>
+
+
+    <script>
+    function onf(){
+        document.getElementById("onf").style.backgroundColor="red";
+    }
+
+    function onb(){
+        document.getElementById("onb").style.backgroundColor="green";
+    }
+
+    function onc(){
+        document.getElementById("onc").style.backgroundColor="yellow";
+    }
+
+    function oni(){
+        document.getElementById("oni").style.backgroundColor="violet";
+    }
+
+    </script>
+
+</body>
+</html>

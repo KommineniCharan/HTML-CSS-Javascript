@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Hnadling - Mouse Events</title>
+</head>
+<body>
+
+    <!--onmouseover-->
+    <button id="onm" onmouseover="onmo()" type="button">On Mouse Over</button><br/><br/>    
+    
+    <!-- onmouseout -->
+    <button id="onmou" onmouseout="onmou()" type="button">On Mouse Out</button><br/><br/>
+
+    <!-- click -->
+    <button id="click" onclick="oncl()" type="button">On Click Event</button><br/><br/>
+
+    <!-- double click -->
+    <button id="dclick" ondblclick="ondcl()" type="button">On Double Click Event</button><br/><br/>
+
+    <script>
+        function onmo(){
+            alert("This is my OnMouseOver Event");
+        }
+
+        function onmou(){
+            alert("This is my OnMouseOut Event");
+        }
+
+        function oncl(){
+            alert("This is my OnClick Event");
+        }
+
+        function ondcl(){
+            alert("This is my Double Click Event")
+        }
+
+    </script>
+
+</body>
+</html>
