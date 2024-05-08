@@ -3,8 +3,7 @@ class Account {
   min_Bal = 1000;
 
   openAcc() {
-    console.log("Account Opened Successfully");
-    return this.min_Bal;
+    return "Account Opened Successfully";
   }
 
   deposit(amount) {
@@ -13,8 +12,7 @@ class Account {
   }
 
   getbalance() {
-    console.log("This is get balance method");
-    return this.min_Bal;
+    return "This is get balance method";
   }
 
   withdraw(amount) {
