@@ -4,6 +4,9 @@ import Good from "./Good";
 import Test from "./Test";
 import Table from "./Table";
 import Navbar from "./Navbar";
+import User from "./User";
+import Message from "./Message";
+import Counter from "./Counter";
 
 function App() {
   return (
@@ -30,6 +33,11 @@ function App() {
       <Test />
       <hr />
       <Table />
+      <hr />
+      <User />
+      <Message />
+      <hr />
+      <Counter />
     </div>
   );
 }
