@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
+.form{width: 300px;}
+.form-label{text-align: left;}
+.sbmt{margin-top: 30px;margin-bottom: 30px;}
