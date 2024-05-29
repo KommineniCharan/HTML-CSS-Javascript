@@ -3,7 +3,6 @@ import "./App.css";
 import Good from "./Good";
 import Test from "./Test";
 import Table from "./Table";
-import Navbar from "./Navbar";
 import User from "./User";
 import Message from "./Message";
 import Counter from "./Counter";
@@ -14,6 +13,8 @@ import Nav from "./Nav";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 import Besant from "./Besant";
+import Hook from "./Hook";
+import Axioss from "./Axioss";
 
 function App() {
   return (
@@ -59,6 +60,11 @@ function App() {
       <Form />
       <hr />
       <Lifecycle />
+      <hr />
+      <Hook />
+      <hr />
+      <Axioss />
+      <hr />
     </div>
   );
 }
